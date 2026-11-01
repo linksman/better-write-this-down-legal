@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Generated from src/features/legal/documents.ts by npm run legal:pages. Don't edit by hand. -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy policy · Better Write This Down</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <style>
+      :root { color-scheme: light dark; --bg: #faf6ef; --ink: #24211c; --soft: #5c564c; --line: #e4dccd; --link: #b4502c; }
+      @media (prefers-color-scheme: dark) { :root { --bg: #1b1916; --ink: #f1ebe0; --soft: #bdb4a6; --line: #3a352e; --link: #f08a62; } }
+      body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+      main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
+      .app { font-weight: 600; color: var(--soft); margin: 0 0 8px; }
+      h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+      .updated { color: var(--soft); font-size: 14px; margin: 0 0 24px; }
+      h2 { font-size: 18px; margin: 32px 0 8px; }
+      p, li { color: var(--soft); }
+      .intro { color: var(--ink); }
+      ul { padding-inline-start: 22px; }
+      footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 14px; }
+      a { color: var(--link); }
+    </style>
+  </head>
+  <body>
+    <main>
+    <p class="app">Better Write This Down</p>
+    <h1>Privacy policy</h1>
+    <p class="updated">Last updated: 1 November 2026</p>
+    <p class="intro">Better Write This Down is a private notebook for the sessions and appointments you go to. It is built so that your notes stay with you. This policy explains what the app does with your information, in plain language.</p>
+    <h2>The short version</h2>
+    <ul>
+      <li>There is no account and no sign-up.</li>
+      <li>Your notes, and the photos, files, sketches and recordings you add to them, are stored only on your device, encrypted. We never receive them.</li>
+      <li>There are no ads, no analytics and no tracking.</li>
+      <li>Voice typing happens on your device, except Hebrew, which is sent to a transcription service only after you agree.</li>
+    </ul>
+    <h2>What stays on your device</h2>
+    <p>Everything you enter — the people and places you add, their schedules, your session notes, the photos, files, sketches and recordings you add to them, and your settings — is stored on your device only.</p>
+    <p>On phones, it is kept in an encrypted database. The encryption key is held by your phone’s secure storage (the iOS Keychain or the Android Keystore) and never leaves the device. In a web browser, your data is encrypted before it is saved in the browser’s storage, with a key that stays in that browser.</p>
+    <p>We have no server that stores your notes, so we cannot read, share, sell or recover them.</p>
+    <h2>Voice typing</h2>
+    <p>Voice typing is optional and only records while you are recording. What you record is used to produce text and then discarded, unless you choose to keep the recording with a session. A kept recording is stored on your device, encrypted like your notes, until you delete it.</p>
+    <p>English, French, Spanish, German, Italian, Portuguese, Japanese and Korean are transcribed entirely on your device. The first time you use voice typing, the app downloads a speech recognition model from Hugging Face. That download is an ordinary file request: it includes technical details such as your IP address, but none of your notes or recordings.</p>
+    <p>Hebrew is transcribed by a third-party service. Before your first Hebrew recording, the app asks for your agreement. When you record in Hebrew, or ask the app to write out a kept Hebrew recording, the audio is sent over an encrypted connection to our transcription relay, which passes it to OpenAI’s speech-to-text service and returns the text to your device. Our relay does not store your audio or the resulting text. OpenAI processes the audio under its own API terms and privacy policy; under those terms, audio sent through its API is not used to train its models by default and may be kept for a limited time for abuse monitoring.</p>
+    <p>To keep the relay from being misused, the Android app asks Google Play’s Play Integrity service to confirm that each Hebrew request comes from a genuine copy of the app, installed from Google Play, on a genuine device. Google processes app and device information for this under its own privacy policy; the relay receives only Google’s verdict, which does not identify you. The relay also uses your IP address to limit how many requests can be made: it is held in memory for up to a day, and may appear in the relay’s server logs, kept by our hosting provider for a limited time, when a limit is reached.</p>
+    <p>If you do not want any audio to leave your device, do not use Hebrew voice typing. Typing works in every language.</p>
+    <h2>Reminders (nudges)</h2>
+    <p>Nudges are scheduled by the app on your device. No reminder server is involved.</p>
+    <p>A nudge can include a short part of a previous note, such as what you wanted to bring up. Like any notification, it may be visible on your lock screen. You can turn nudges off for each person or place, or turn off notifications for the app in your phone’s settings.</p>
+    <h2>Backups</h2>
+    <p>When you create a backup, the app encrypts your people and session notes (and, if you choose, their photos, files, sketches and recordings) with a recovery code you choose, and you decide where to save the file. If you save it to a cloud service, that service stores the encrypted file under its own terms; without your recovery code, the file cannot be read.</p>
+    <p>We never receive your backups or your recovery code, so we cannot recover either if they are lost.</p>
+    <h2>Permissions</h2>
+    <ul>
+      <li>Microphone — only for voice typing and recordings, and only while you are recording.</li>
+      <li>Camera — only when you choose to take a photo for a session.</li>
+      <li>Photos — only the photos you pick to add to a session.</li>
+      <li>Notifications — only for the nudges you turn on.</li>
+      <li>Files — only the files you pick to add to a session, a backup file you choose to restore, or a place you choose to save one.</li>
+    </ul>
+    <h2>Deleting your data</h2>
+    <p>You can erase everything at any time in Settings → Erase all data. Uninstalling the app also removes its data from your device. Backup files you saved elsewhere are not affected; delete those yourself if you no longer need them.</p>
+    <p>Because we do not hold your data, there is nothing for us to delete, export or correct on your behalf. If you have a question about Hebrew transcription requests, contact us and we will help where we can.</p>
+    <h2>Children</h2>
+    <p>The app is not directed at children under 13 (or the minimum age required where you live), and we do not knowingly collect information from them.</p>
+    <h2>Changes to this policy</h2>
+    <p>If the app changes how it handles information — for example, if paid features or syncing are added — we will update this policy and show the new date at the top. Significant changes will be announced in the app.</p>
+    <h2>Contact</h2>
+    <p>Questions about privacy: tbdsoftwarelabs@gmail.com</p>
+    <footer><a href="terms.html">Terms &amp; conditions</a></footer>
+    </main>
+  </body>
+</html>
